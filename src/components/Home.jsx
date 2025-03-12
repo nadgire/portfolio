@@ -39,7 +39,7 @@ const Home = () => {
     return (
 
         <section id="home" className='h-auto lg:h-screen bg-[#EDF2F4] pt-16 text-shadow-sm whitespace-nowrap relative'>
-            <BackgroundBeamsWithCollision className={"absolute bg-transparent"} />
+            <BackgroundBeamsWithCollision className={"absolute bg-transparent z-10"} />
             <div className='w-[80%] flex items-center h-full mx-auto flex-col lg:flex-row'>
                 <div className='lg:w-4/7 items-center flex justify-center mt-5 lg:mt-0'>
                     <img ref={tiltRef} src={profile} alt="" className='h-[250px] w-[210px] md:h-[300px] md:w-[260px] lg:h-[450px] lg:w-[380px]' data-tilt />
@@ -75,43 +75,43 @@ const Home = () => {
                         </a>
                     </div>
                     <div className='flex flex-wrap lg:flex-nowrap lg:space-x-3 lg:flex-row justify-around space-y-5'>
-                        <a href="https://www.linkedin.com/in/abhishek-nadgire/" target='_blank' className='w-1/4 sm:w-auto flex justify-center'>
+                        <a href="https://www.linkedin.com/in/abhishek-nadgire/" target='_blank' className='w-1/4 sm:w-auto flex justify-center cursor-pointer z-10'>
                             <div className='bg-black w-10 h-10 flex items-center rounded-full'>
                                 <FaLinkedin className='mx-auto text-[#01d8ff] text-2xl' />
                             </div>
                         </a>
-                        <a href="https://github.com/nadgire" target='_blank' className='w-1/4 sm:w-auto flex justify-center'>
+                        <a href="https://github.com/nadgire" target='_blank' className='w-1/4 sm:w-auto flex justify-center z-10'>
                             <div className='bg-black w-10 h-10 flex items-center rounded-full'>
                                 <FaGithub className='mx-auto text-[#01d8ff] text-2xl' />
                             </div>
                         </a>
-                        <a href="https://leetcode.com/u/nadgire/" target='_blank' className='w-1/4 sm:w-auto flex justify-center'>
+                        <a href="https://leetcode.com/u/nadgire/" target='_blank' className='w-1/4 sm:w-auto flex justify-center z-10'>
                             <div className='bg-black w-10 h-10 flex items-center rounded-full'>
                                 <SiLeetcode className='mx-auto text-[#01d8ff] text-2xl' />
                             </div>
                         </a>
-                        <a href="https://leetcode.com/u/nadgire/" target='_blank' className='w-1/4 sm:w-auto flex justify-center'>
+                        <a href="https://leetcode.com/u/nadgire/" target='_blank' className='w-1/4 sm:w-auto flex justify-center z-10'>
                             <div className='bg-black w-10 h-10 flex items-center rounded-full'>
                                 <MdDrafts className='mx-auto text-[#01d8ff] text-2xl' />
                             </div>
                         </a>
-                        <a href="https://wa.me/+919579318107" target='_blank' className='w-1/4 sm:w-auto flex justify-center'>
+                        <a href="https://wa.me/+919579318107" target='_blank' className='w-1/4 sm:w-auto flex justify-center z-10'>
                             <div className='bg-black w-10 h-10 flex items-center rounded-full'>
                                 <FaWhatsapp className='mx-auto text-[#01d8ff] text-2xl' />
                             </div>
                         </a>
-                        <a href="https://x.com/abhinadgire" target='_blank' className='w-1/4 sm:w-auto flex justify-center'>
+                        <a href="https://x.com/abhinadgire" target='_blank' className='w-1/4 sm:w-auto flex justify-center z-10'>
                             <div className='bg-black w-10 h-10 flex items-center rounded-full'>
                                 <FaTwitter className='mx-auto text-[#01d8ff] text-2xl' />
                             </div>
                         </a>
-                        <a href="https://t.me/nadgire" target='_blank' className='w-1/4 sm:w-auto flex justify-center'>
+                        <a href="https://t.me/nadgire" target='_blank' className='w-1/4 sm:w-auto flex justify-center z-10'>
 
                             <div className='bg-black w-10 h-10 flex items-center rounded-full'>
                                 <FaTelegramPlane className='mx-auto text-[#01d8ff] text-2xl' />
                             </div>
                         </a>
-                        <a href="https://www.instagram.com/nadgire_" target='_blank' className='w-1/4 sm:w-auto flex justify-center'>
+                        <a href="https://www.instagram.com/nadgire_" target='_blank' className='w-1/4 sm:w-auto flex justify-center z-10'>
                             <div className='bg-black w-10 h-10 flex items-center rounded-full'>
                                 <FaInstagram className='mx-auto text-[#01d8ff] text-2xl' />
                             </div>
