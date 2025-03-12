@@ -12,6 +12,7 @@
 
 *{
   user-select: none;
+  scroll-behavior: smooth;
 }
 
 @keyframes wave {

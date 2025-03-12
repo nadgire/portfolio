@@ -50,7 +50,7 @@ const Skills = () => {
     ];
 
     return (
-        <div className='py-16 bg-[#02081f]'>
+        <section id="skills" className='py-16 bg-[#02081f]'>
             <div className='flex items-center justify-center gap-3 sm:gap-5 text-shadow-sm text-white'>
                 <GiSkills className='text-5xl' />
                 <span className='h-full text-center text-4xl font-bold'>
@@ -69,7 +69,7 @@ const Skills = () => {
                     })
                 }
             </div>
-        </div>
+        </section>
     )
 }
 

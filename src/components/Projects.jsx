@@ -20,7 +20,7 @@ const Projects = () => {
     ];
 
     return (
-        <div className='pt-16 pb-32'>
+        <section id="projects" className='pt-16 pb-32'>
             <div className='flex items-center justify-center gap-3 text-shadow-sm'>
                 <LiaLaptopCodeSolid className='text-6xl' />
                 <span className='h-full text-center text-4xl font-bold'>
@@ -54,7 +54,7 @@ const Projects = () => {
                     })
                 }
             </div>
-        </div>
+        </section>
     )
 }
 

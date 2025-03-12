@@ -13,6 +13,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { MdDrafts } from "react-icons/md";
 import SkillAnimation from './SkillAnimation';
 import VanillaTilt from 'vanilla-tilt';
+import { BackgroundBeamsWithCollision } from './BackgroundBeamsWithCollision';
 
 const Hero = () => {
     var arr = [];
@@ -36,7 +37,9 @@ const Hero = () => {
     }, []);
 
     return (
-        <div className='h-auto lg:h-screen bg-[#EDF2F4] pt-16 text-shadow-sm whitespace-nowrap'>
+
+        <section id="home" className='h-auto lg:h-screen bg-[#EDF2F4] pt-16 text-shadow-sm whitespace-nowrap relative'>
+            <BackgroundBeamsWithCollision className={"absolute bg-transparent"} />
             <div className='w-[80%] flex items-center h-full mx-auto flex-col lg:flex-row'>
                 <div className='lg:w-4/7 items-center flex justify-center mt-5 lg:mt-0'>
                     <img ref={tiltRef} src={profile} alt="" className='h-[250px] w-[210px] md:h-[300px] md:w-[260px] lg:h-[450px] lg:w-[380px]' data-tilt />
@@ -54,22 +57,22 @@ const Hero = () => {
                             </span>
                         </p>
                         <div className='space-y-5 md:space-y-2 lg:space-y-5'>
-                            <p className='flex items-center relative'>
+                            <div className='flex items-center relative'>
                                 I am a
                                 <span className='flex items-center absolute left-16 md:left-20 lg:left-[100px] text-black '>
                                     <SkillAnimation />|
                                 </span>
-                            </p>
+                            </div>
                             <p className='whitespace-break-spaces'>Welcome to my profile, and feel at home!</p>
                         </div>
                     </div>
                     <div>
-                        <Link to="/#about-me">
+                        <a to="/#about-me">
                             <button className='mx-auto md:mx-0 font-semibold text-[14px] md:text-[18px] lg:text-xl bg-gradient-to-r from-blue-500 to-blue-900 text-white flex items-center px-8 py-3 rounded-full gap-2 cursor-pointer'>
                                 About Me
                                 <FaArrowAltCircleDown />
                             </button>
-                        </Link>
+                        </a>
                     </div>
                     <div className='flex flex-wrap lg:flex-nowrap lg:space-x-3 lg:flex-row justify-around space-y-5'>
                         <a href="https://www.linkedin.com/in/abhishek-nadgire/" target='_blank' className='w-1/4 sm:w-auto flex justify-center'>
@@ -117,7 +120,7 @@ const Hero = () => {
                 </div>
 
             </div>
-        </div >
+        </section >
     )
 }
 

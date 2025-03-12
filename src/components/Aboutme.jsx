@@ -33,7 +33,7 @@ const Aboutme = () => {
     };
 
     return (
-        <div className='h-auto bg-[#fff] pt-16 max-w-[80%] mx-auto' id='about-me'>
+        <section className='h-auto bg-[#fff] pt-16 max-w-[80%] mx-auto' id='about-me'>
             <div className='flex justify-center items-center md:gap-5 text-shadow-sm'>
                 <BsPersonHeart className='hidden lg:block text-5xl' />
                 <div className='lg:hidden lg:w-full'>
@@ -116,7 +116,7 @@ const Aboutme = () => {
                 </div>
             </div>
 
-        </div >
+        </section >
     )
 }
 
