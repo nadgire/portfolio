@@ -15,7 +15,7 @@ import SkillAnimation from './SkillAnimation';
 import VanillaTilt from 'vanilla-tilt';
 import { BackgroundBeamsWithCollision } from './BackgroundBeamsWithCollision';
 
-const Hero = () => {
+const Home = () => {
     var arr = [];
     const tiltRef = useRef(null);
 
@@ -124,4 +124,4 @@ const Hero = () => {
     )
 }
 
-export default Hero
+export default Home

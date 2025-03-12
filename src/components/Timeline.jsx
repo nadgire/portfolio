@@ -1,10 +1,8 @@
-"use client";;
+"use client";
 import { useScroll, useTransform, motion } from "motion/react";
 import React, { useEffect, useRef, useState } from "react";
 
-const Timeline = ({
-    data
-}) => {
+const Timeline = ({ data }) => {
     const ref = useRef(null);
     const containerRef = useRef(null);
     const [height, setHeight] = useState(0);
@@ -31,13 +29,14 @@ const Timeline = ({
                     Changelog from my journey
                 </h2>
                 <p className="text-gray-400 text-sm md:text-xl max-w-sm">
-                    I&apos;ve total 6.8 years of working experience in IT industry. Here&apos;s
-                    a timeline of my journey.
+                    I&apos;ve total 6.8 years of working experience in IT industry. Here&apos;s a timeline of my journey.
                 </p>
             </div>
+
+            {/* Timeline Content */}
             <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
                 {data.map((item, index) => (
-                    <div key={index} className={`flex justify-start ${index == 0 ? "md:pt-10" : "pt-10 md:pt-40"}`}>
+                    <div key={index} className={`flex justify-start ${index === 0 ? "md:pt-10" : "pt-10 md:pt-40"}`}>
                         <div className="sticky flex flex-col md:flex-row z-10 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
                             <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-[#30011E] flex items-center justify-center">
                                 <div className="h-4 w-4 rounded-full bg-neutral-200 border border-neutral-300 p-2" />
@@ -52,22 +51,30 @@ const Timeline = ({
                                 {item.title}
                             </h3>
                             <div className="text-xl md:text-2xl text-gray-300">
-                                {item.period}{" "}
+                                {item.period}
                             </div>
                             <div className="text-xl md:hidden text-gray-400">
-                                {item.content}{" "}
+                                {item.content}
                             </div>
                         </div>
 
                         <div className="hidden md:block relative pr-4 w-full">
                             <div className="hidden md:block md:text-2xl text-gray-400">
-                                {item.content}{" "}
+                                {item.content}
                             </div>
                         </div>
                     </div>
                 ))}
-                <div style={{ height: height + "px", }} className="absolute md:left-8 left-8 top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-200 to-transparent to-[99%]  [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] ">
-                    <motion.div style={{ height: heightTransform, opacity: opacityTransform, }} className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-red-800 via-yellow-400 to-transparent from-[0%] via-[10%] rounded-full" />
+
+                {/* Timeline Line with Gradient */}
+                <div
+                    style={{ height: height + "px" }}
+                    className="absolute md:left-8 left-8 top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-200 to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)]"
+                >
+                    <motion.div
+                        style={{ height: heightTransform, opacity: opacityTransform }}
+                        className="absolute inset-x-0 top-0 w-[2px] bg-gradient-to-t from-red-800 via-yellow-400 to-transparent from-[0%] via-[10%] rounded-full"
+                    />
                 </div>
             </div>
         </section>
