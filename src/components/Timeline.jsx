@@ -23,7 +23,7 @@ const Timeline = ({ data }) => {
     const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
     return (
-        <section className="w-full font-sans md:px-10" ref={containerRef}>
+        <div className="w-full font-sans md:px-10" ref={containerRef}>
             <div className="max-w-7xl mx-auto py-14 px-4 md:px-8 lg:px-10">
                 <h2 className="text-xl md:text-2xl mb-4 text-orange-400 max-w-4xl">
                     Changelog from my journey
@@ -77,7 +77,7 @@ const Timeline = ({ data }) => {
                     />
                 </div>
             </div>
-        </section>
+        </div>
     );
 };
 

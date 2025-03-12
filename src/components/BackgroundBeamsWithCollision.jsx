@@ -92,7 +92,7 @@ export const BackgroundBeamsWithCollision = ({
         (<div
             ref={parentRef}
             className={cn(
-                "h-[calc(100%-65px)]  flex items-center w-full justify-center overflow-hidden",
+                "h-[calc(100%-65px)] flex items-center w-full justify-center overflow-hidden",
                 // h-screen if you want bigger
                 className
             )}>
@@ -229,7 +229,7 @@ const Explosion = ({
     }));
 
     return (
-        (<div {...props} className={cn("absolute z-50 h-2 w-2", props.className)}>
+        (<div {...props} className={cn("absolute h-2 w-2", props.className)}>
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
