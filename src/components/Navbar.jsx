@@ -1,6 +1,5 @@
 import React from 'react'
 import logoImage from '../assets/images/logo.png'
-import { Link, NavLink } from 'react-router-dom'
 import { IoHome } from "react-icons/io5"; // Make sure you import the icons
 import { BsPersonHeart } from "react-icons/bs";
 import { GiSkills } from "react-icons/gi";
@@ -10,13 +9,6 @@ import { FaGraduationCap } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-import Home from './Home'
-import Aboutme from './Aboutme'
-import Skills from './Skills'
-import Projects from './Projects'
-import Experience from './Experience'
-import Education from './Education'
-import ContactMe from './ContactMe'
 
 const Navbar = () => {
 
