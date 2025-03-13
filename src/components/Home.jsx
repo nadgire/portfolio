@@ -66,10 +66,10 @@ const Home = () => {
                             <p className='whitespace-break-spaces'>Welcome to my profile, and feel at home!</p>
                         </div>
                     </div>
-                    <div>
-                        <a to="/#about-me">
+                    <div className='flex gap-10'>
+                        <a href="https://drive.google.com/file/d/1NXZqoavgir9hAuXovtUIeoCAsMywPIVW/view?usp=drive_link" target='_blank' className='z-50'>
                             <button className='mx-auto md:mx-0 font-semibold text-[14px] md:text-[18px] lg:text-xl bg-gradient-to-r from-blue-500 to-blue-900 text-white flex items-center px-8 py-3 rounded-full gap-2 cursor-pointer'>
-                                About Me
+                                Resume
                                 <FaArrowAltCircleDown />
                             </button>
                         </a>
