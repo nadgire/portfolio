@@ -55,7 +55,7 @@ const DetailedExperience = () => {
             duration: "Aug 2015 to May 2016",
             responsibilities: [
                 "Worked as Lab assistant during year gap at my own departmet.",
-                "My main responsibility was to install format computers, install OS, softwares necessary for the semister so that students can practice.",
+                "My main responsibility was to format computers, install OS, necessary softwares for the semister so that students can practice.",
                 "Keep the track the number of students using the lap eqipments.",
                 "Keep track of number of computers, LAN/WAN and other devices.",
                 "Hardware and software maintenance of the computer lab.",
@@ -69,7 +69,7 @@ const DetailedExperience = () => {
     }, []);
 
     return (
-        <section id="detailedExperience" className="pt-32 pb-16 relative px-6 lg:px-10 md:w-[80%] mx-auto">
+        <section id="experience" className="pt-32 pb-16 relative px-6 lg:px-10 md:w-[80%] mx-auto">
             <div className="flex items-center justify-center gap-3 text-shadow-sm">
                 <FaBriefcase className="text-6xl" />
                 <span className="text-center text-4xl font-bold">
