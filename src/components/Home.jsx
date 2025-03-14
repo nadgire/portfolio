@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import profile from '../assets/images/profile.png'
+import profile from '../assets/images/profile-min.png'
 import wave from '../assets/images/Waving_Hand_Sign_Emoji_Icon_ios10_medium.avif'
 import { FaArrowAltCircleDown } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
