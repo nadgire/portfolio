@@ -68,11 +68,12 @@ const Home = () => {
                     </div>
                     <div className='flex gap-10'>
                         <a href="https://drive.google.com/file/d/1NXZqoavgir9hAuXovtUIeoCAsMywPIVW/view?usp=drive_link" target='_blank' className='z-10'>
-                            <button className='mx-auto md:mx-0 font-semibold text-[14px] md:text-[18px] lg:text-xl bg-gradient-to-r from-blue-500 to-blue-900 text-white flex items-center px-6 py-2 rounded-lg gap-2 cursor-pointer'>
+                            <button className='mx-auto md:mx-0 font-semibold text-[14px] md:text-[18px] lg:text-xl bg-gradient-to-r from-blue-500 to-blue-900 text-white flex items-center px-6 py-2 rounded-lg gap-2 cursor-pointer thunder-effect'>
                                 Resume
                                 <FaArrowAltCircleDown />
                             </button>
                         </a>
+
                     </div>
                     <div className='flex flex-wrap lg:flex-nowrap lg:space-x-3 lg:flex-row justify-around space-y-5'>
                         <a href="https://www.linkedin.com/in/abhishek-nadgire/" target='_blank' className='w-1/4 sm:w-auto flex justify-center cursor-pointer z-10'>
