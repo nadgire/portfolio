@@ -20,59 +20,59 @@ const navMenuArr = [
 ];
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); 
-  const [activeSection, setActiveSection] = useState(''); 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('home'); // Default active section is 'home'
 
   const handleMenuToggle = () => {
     setIsMenuOpen((prevState) => !prevState);
   };
 
   useEffect(() => {
-    const sections = document.querySelectorAll('section'); 
+    const sections = document.querySelectorAll('section');
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setActiveSection(entry.target.id); 
+            setActiveSection(entry.target.id); // Update active section
           }
         });
       },
-      { 
-        threshold: 0.50, 
-        rootMargin: '0px 0px -70px 0px' 
+      {
+        threshold: 0.50,
+        rootMargin: '0px 0px -70px 0px',
       }
     );
 
     sections.forEach((section) => {
-      observer.observe(section); 
+      observer.observe(section);
     });
 
     return () => {
-      observer.disconnect(); 
+      observer.disconnect();
     };
   }, []);
 
   return (
-    <section className='shadow-sm w-full fixed bg-white whitespace-nowrap z-50'>
-      <div className='flex justify-between items-center mx-auto w-full lg:max-w-[80%] h-16 lg:pr-0'>
-        <a href='/#' className='w-16 h-5 flex flex-col items-center justify-center mx-10 lg:ms-0'>
-          <img src={logoImage} alt='Logo' className='w-16 h-5' />
-          <span className='font-bold text-xl tracking-widest'>ABHISHEK</span>
+    <section className="shadow-sm w-full fixed bg-white whitespace-nowrap z-50">
+      <div className="flex justify-between items-center mx-auto w-full lg:max-w-[80%] h-16 lg:pr-0">
+        <a href="#home" className="w-16 h-5 flex flex-col items-center justify-center mx-10 lg:ms-0">
+          <img src={logoImage} alt="Logo" className="w-16 h-5" />
+          <span className="font-bold text-xl tracking-widest">ABHISHEK</span>
         </a>
 
-        <nav className='lg:block relative mr-5'>
+        <nav className="lg:block relative mr-5">
           {isMenuOpen ? (
             <FaTimes
-              className='text-2xl lg:hidden cursor-pointer mr-10'
+              className="text-2xl lg:hidden cursor-pointer mr-10"
               onClick={handleMenuToggle}
-              aria-label='Close Navigation Menu'
+              aria-label="Close Navigation Menu"
             />
           ) : (
             <RxHamburgerMenu
-              className='text-2xl lg:hidden cursor-pointer mr-10'
+              className="text-2xl lg:hidden cursor-pointer mr-10"
               onClick={handleMenuToggle}
-              aria-label='Toggle Navigation Menu'
+              aria-label="Toggle Navigation Menu"
             />
           )}
 
@@ -84,10 +84,10 @@ const Navbar = () => {
                 key={title}
                 className={`hover:scale-125 transition-all duration-500 hover:text-blue-400 lg:hover:text-blue-900 ${
                   activeSection === href.slice(1) ? 'text-orange-400 font-semibold' : ''
-                }`} 
+                }`}
               >
-                <a href={href} className='flex gap-2'>
-                  <MenuIcon className='text-lg' />
+                <a href={href} className="flex gap-2">
+                  <MenuIcon className="text-lg" />
                   {title}
                 </a>
               </li>
