@@ -1,6 +1,7 @@
 import React from "react";
 import { FaBriefcase } from "react-icons/fa";
 import Timeline from "./Timeline";
+import { Link } from "react-router-dom";
 
 const Experience = () => {
     const experiences = [
@@ -39,11 +40,11 @@ const Experience = () => {
             <Timeline data={experiences} />
 
             {/* Button to view more details */}
-            <div className="text-center mt-8">
+            <Link to="/detailed-experience" className="text-center mt-8 block">
                 <button className="font-semibold text-xl bg-gradient-to-r from-blue-500 to-blue-800 text-white px-8 py-3 rounded-full cursor-pointer transform transition-all hover:scale-105 active:scale-95">
                     View in Detail
                 </button>
-            </div>
+            </Link>
         </section>
     );
 };
