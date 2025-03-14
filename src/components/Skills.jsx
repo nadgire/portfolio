@@ -22,6 +22,7 @@ import jquery from '../assets/images/jquery-1.svg';
 import mongodb from '../assets/images/mongodb.svg';
 import jira from '../assets/images/jira-3.svg';
 import snow from '../assets/images/snow.svg';
+import itil from '../assets/images/ITIL.png'
 
 const SkillItem = ({ skillName, skillImage }) => (
   <div className="flex flex-col items-center justify-center w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6 gap-3 bg-[#02081f] text-white p-5 rounded-3xl hover:bg-[#02082f] hover:vibrate hover:shadow-sky-950 shadow-lg tracking-widest">
@@ -52,6 +53,7 @@ const Skills = () => {
     { skillName: 'MongoDB', skillImage: mongodb },
     { skillName: 'Jira', skillImage: jira },
     { skillName: 'Service Now', skillImage: snow },
+    // { skillName: 'ITIL Foundation', skillImage: itil },
   ];
 
   return (
