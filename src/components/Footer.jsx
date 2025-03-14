@@ -13,6 +13,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
+import { GiBrain } from "react-icons/gi";
 
 const navMenuArr = [
   { title: 'Home', href: '#home', menuIcon: IoHome },
@@ -39,7 +40,7 @@ const Footer = () => {
                   <FaChevronRight className='text-lg' />
                   {title}
                 </a>
-              </li> 
+              </li>
             ))}
           </ul>
         </div>
@@ -86,11 +87,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className='w-[80%] mx-auto' style={{borderTop: "0.5px solid gray"}}>
+      <div className='w-[80%] mx-auto' style={{ borderTop: "0.5px solid gray" }}>
 
       </div>
       <div className='text-center py-5'>
-            Made with <FaHeart className='text-red-500 inline' /> by <strong className='text-yellow-400'>Abhishek Nadgire</strong>.
+        Made with <FaHeart className='text-red-500 inline' /> & <GiBrain className='text-red-300 inline text-xl' /> by <strong className='text-yellow-400'>Abhishek Nadgire</strong>.
       </div>
     </div>
   )

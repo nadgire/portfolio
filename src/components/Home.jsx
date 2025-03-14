@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import profile from '../assets/images/profile.png'
 import wave from '../assets/images/Waving_Hand_Sign_Emoji_Icon_ios10_medium.avif'
-import { Link } from 'react-router-dom';
 import { FaArrowAltCircleDown } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -16,7 +15,6 @@ import VanillaTilt from 'vanilla-tilt';
 import { BackgroundBeamsWithCollision } from './BackgroundBeamsWithCollision';
 
 const Home = () => {
-    var arr = [];
     const tiltRef = useRef(null);
 
     useEffect(() => {
