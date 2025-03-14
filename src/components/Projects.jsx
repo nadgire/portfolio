@@ -122,12 +122,13 @@ const Projects = () => {
         })}
       </div>
       <div className='flex justify-center pt-28'>
-        <a href="\allprojects" target='_blank' className='z-10'>
-          <button className='mx-auto md:mx-0 font-semibold text-[14px] md:text-[18px] lg:text-xl bg-gradient-to-r from-blue-500 to-blue-900 text-white flex items-center px-6 py-2 rounded-lg gap-2 cursor-pointer'>
-            View All
-            <FaChevronCircleRight />
-          </button>
-        </a>
+      <a href="/allprojects" target="_blank" className="z-10">
+  <button className="mx-auto md:mx-0 font-semibold text-[14px] md:text-[18px] lg:text-xl bg-gradient-to-r from-blue-500 to-blue-900 text-white flex items-center px-6 py-2 rounded-lg gap-2 cursor-pointer thunder-effect">
+    View All
+    <FaChevronCircleRight />
+  </button>
+</a>
+
       </div>
     </section>
   );

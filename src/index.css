@@ -58,3 +58,38 @@
 .hover\:vibrate:hover {
   animation: vibrate 0.2s ease-in-out 1.5;
 }
+/* Ensure the button keeps the original blue gradient */
+.thunder-effect {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to right, #1E3A8A, #3B82F6); /* Original blue gradient */
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+/* Create the white streak with initial hidden position */
+.thunder-effect::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%; /* Start off-screen to the left */
+  width: 100%;
+  height: 100%;
+  background: white;
+  opacity: 0; /* Invisible initially */
+  transform: skewX(-45deg); /* Angle for the thunder-like effect */
+  visibility: hidden; /* Fully hide the element before hover */
+  transition: all 0.4s ease;
+}
+
+/* Hover state for the white light streak */
+.thunder-effect:hover::before {
+  left: 100%; /* Move from left to right */
+  opacity: 0.5; /* Make the streak semi-visible */
+  visibility: visible; /* Reveal the streak on hover */
+}
+
+/* Slight scale effect on hover */
+.thunder-effect:hover {
+  transform: scale(1.05);
+}
