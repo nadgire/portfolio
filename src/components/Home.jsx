@@ -89,7 +89,7 @@ const Home = () => {
                                 <SiLeetcode className='mx-auto text-[#01d8ff] text-2xl' />
                             </div>
                         </a>
-                        <a href="https://leetcode.com/u/nadgire/" target='_blank' className='w-1/4 sm:w-auto flex justify-center z-10'>
+                        <a href="mailto:abhinadgire@gmail.com" target='_blank' className='w-1/4 sm:w-auto flex justify-center z-10'>
                             <div className='bg-black w-10 h-10 flex items-center rounded-full'>
                                 <MdDrafts className='mx-auto text-[#01d8ff] text-2xl' />
                             </div>
