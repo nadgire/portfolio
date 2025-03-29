@@ -8,7 +8,6 @@ export default defineConfig({
   
   server: {
     host: '0.0.0.0',  // Expose the dev server to the network
-    port: 5174,        // You can specify a port (default is 5175, or whatever you prefer)
   },
 
 })

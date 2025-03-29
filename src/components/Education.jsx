@@ -2,7 +2,7 @@ import React from 'react';
 import { FaGraduationCap } from 'react-icons/fa6';
 import bitcode from '../assets/images/bitcode.png';
 import essp from '../assets/images/essp.jpg';
-import ghrcem from '../assets/images/ghrcem.AVIF';
+import ghrcem from '../assets/images/ghrcem.avif';
 import ssmv from '../assets/images/ssmv.jpg';
 import { motion } from 'framer-motion';
 
