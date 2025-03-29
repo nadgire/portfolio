@@ -5,6 +5,7 @@ import tictactoe from '../assets/images/ttt.png';
 import passwordgenerator from '../assets/images/password-generator.png';
 import rps from '../assets/images/rps.png';
 import portfolio from '../assets/images/portfolio.png';
+import todomanager from '../assets/images/todomanager.png';
 import { LiaLaptopCodeSolid } from 'react-icons/lia';
 import PinEffect from './PinEffect';
 import { FaChevronCircleRight } from "react-icons/fa";
@@ -20,6 +21,14 @@ const Projects = () => {
       ProjTitle: 'D Clock Company',
       ProjDescription: 'An analog clock which shows current system time and helps you to organize and memorize the work using its prime functions like Alarm and Timer.',
       LiveLink: 'https://nadgire.github.io/Mini-Projects/D-Clock-Company/public/'
+    },
+    {
+      HoverTitle: 'Technologies Used',
+      HoverDescription: 'React, JavaScript, TailwindCSS, Github, Netlify, Render, JWT Token, Redux, Node, Express, MongoDB',
+      ProjImage: todomanager,
+      ProjTitle: 'ToDo Manager',
+      ProjDescription: 'A task management application that helps users organize, prioritize, and track their to-do lists, improving productivity and time management skills.',
+      LiveLink: 'https://simplytodomanager.netlify.app/'
     },
     {
       HoverTitle: 'Technologies Used',
@@ -122,12 +131,12 @@ const Projects = () => {
         })}
       </div>
       <div className='flex justify-center pt-28'>
-      <a href="/allprojects" target="_blank" className="z-10">
-  <button className="mx-auto md:mx-0 font-semibold text-[14px] md:text-[18px] lg:text-xl bg-gradient-to-r from-blue-500 to-blue-900 text-white flex items-center px-6 py-2 rounded-lg gap-2 cursor-pointer thunder-effect">
-    View All
-    <FaChevronCircleRight />
-  </button>
-</a>
+        <a href="/allprojects" target="_blank" className="z-10">
+          <button className="mx-auto md:mx-0 font-semibold text-[14px] md:text-[18px] lg:text-xl bg-gradient-to-r from-blue-500 to-blue-900 text-white flex items-center px-6 py-2 rounded-lg gap-2 cursor-pointer thunder-effect">
+            View All
+            <FaChevronCircleRight />
+          </button>
+        </a>
 
       </div>
     </section>
