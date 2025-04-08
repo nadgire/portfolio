@@ -73,7 +73,7 @@ const Home = () => {
                         </a>
 
                     </div>
-                    <div className='flex flex-wrap lg:flex-nowrap lg:space-x-3 lg:flex-row justify-around space-y-5'>
+                    <div className='flex flex-wrap lg:flex-nowrap lg:space-x-3 lg:flex-row justify-start space-y-5 gap-5'>
                         <a href="https://www.linkedin.com/in/abhishek-nadgire/" target='_blank' className='w-1/4 sm:w-auto flex justify-center cursor-pointer z-10'>
                             <div className='bg-black w-10 h-10 flex items-center rounded-full'>
                                 <FaLinkedin className='mx-auto text-[#01d8ff] text-2xl' />
@@ -99,22 +99,7 @@ const Home = () => {
                                 <FaWhatsapp className='mx-auto text-[#01d8ff] text-2xl' />
                             </div>
                         </a>
-                        <a href="https://x.com/abhinadgire" target='_blank' className='w-1/4 sm:w-auto flex justify-center z-10'>
-                            <div className='bg-black w-10 h-10 flex items-center rounded-full'>
-                                <FaTwitter className='mx-auto text-[#01d8ff] text-2xl' />
-                            </div>
-                        </a>
-                        <a href="https://t.me/nadgire" target='_blank' className='w-1/4 sm:w-auto flex justify-center z-10'>
-
-                            <div className='bg-black w-10 h-10 flex items-center rounded-full'>
-                                <FaTelegramPlane className='mx-auto text-[#01d8ff] text-2xl' />
-                            </div>
-                        </a>
-                        <a href="https://www.instagram.com/nadgire_" target='_blank' className='w-1/4 sm:w-auto flex justify-center z-10'>
-                            <div className='bg-black w-10 h-10 flex items-center rounded-full'>
-                                <FaInstagram className='mx-auto text-[#01d8ff] text-2xl' />
-                            </div>
-                        </a>
+                        
                     </div>
                 </div>
 
