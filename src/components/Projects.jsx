@@ -67,7 +67,7 @@ const Projects = () => {
       HoverDescription: 'ReactJS, TailwindCSS, MongoDB, AWS, Netlify',
       ProjImage: portfolio,
       ProjTitle: 'Portfolio',
-      ProjDescription: 'The one you are looking at!',
+      ProjDescription: 'The one you are looking at! This site showcases a collection of my work, including projects, skills, and accomplishments. It’s built with modern web technologies to provide a clean, responsive experience. Feel free to explore and learn more about the projects I’ve developed and the technologies I use.',
       LiveLink: '/'
     }
   ];
