@@ -69,17 +69,17 @@ const Education = () => {
                 </span>
             </div>
 
-            <div className="flex flex-wrap max-w-[80%] mx-auto pt-14 justify-around gap-y-5">
+            <div className="flex flex-wrap max-w-[80%] mx-auto pt-14 justify-around gap-y-6">
                 {educationData.map((x) => (
                     <motion.article
                         key={x.id}
                         {...animationSettings}
-                        className="flex flex-col md:flex-row gap-2 md:gap-0 bg-white shadow-md rounded-lg overflow-hidden w-full max-w-3xl border"
+                        className="flex flex-col md:flex-row gap-2 md:gap-0 bg-white shadow-md rounded-lg overflow-hidden w-full max-w-3xl border py-5 md:py-0"
                     >
                         <img
                             src={x.image}
                             alt={x.college}
-                            className="w-full md:w-1/3 h-36 rounded-l-lg object-fill"
+                            className="w-1/2 md:w-1/3 h-44 md:h-36 rounded-lg md:rounded-l-lg md:rounded-r-none mx-auto md:mx-0"
                         />
                         <div className="ml-4 flex flex-col justify-center py-2 md:py-0">
                             <h2 className="text-xl font-bold text-blue-900">{x.title}</h2>
