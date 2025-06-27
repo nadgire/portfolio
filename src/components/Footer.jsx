@@ -29,12 +29,12 @@ const Footer = () => {
     <div className='bg-black w-full h-auto text-white'>
       <div className='flex flex-col md:flex-row w-[80%] mx-auto justify-between py-10 md:pt-0 md:pb-10'>
         <div className='md:pt-10 space-y-5 md:space-y-10'>
-          <span className='block'>Site Links</span>
-          <ul className='space-y-2'>
+          <span className='block font-bold'>Site Links</span>
+          <ul className='space-y-2 flex flex-wrap md:block'>
             {navMenuArr.map(({ title, href, menuIcon: MenuIcon }) => (
               <li
                 key={title}
-                className={``}
+                className={`w-full sm:w-1/2 md:w-full`}
               >
                 <a href={href} className='flex gap-2'>
                   <FaChevronRight className='text-lg' />
@@ -45,41 +45,41 @@ const Footer = () => {
           </ul>
         </div>
         <div className='pt-10 space-y-5 md:space-y-10'>
-          <span className='block'>Contact Details</span>
+          <span className='block font-bold'>Contact Details</span>
           <div className='flex flex-col gap-2'>
             <div className='flex items-center gap-2'>
               <IoLocationSharp className='text-xl' />
-              Kothrud, Pune, India.
+              Gurujan Society, Kothrud, Pune, India.
             </div>
             <div className='flex items-center gap-2'>
               <FaMobileAlt className='text-xl' />
-              +91 957 931 8107
+              +91 93 715 111 35
             </div>
             <div className='flex items-center gap-2'>
               <MdEmail className='text-xl' />
-              abhinadgire@gmail.com
+              abhinadgire@hotmail.com
             </div>
           </div>
         </div>
-        <div className='pt-10 space-y-5 md:space-y-10'>
-          <span className='block'>Follow me on</span>
-          <div className='flex flex-col items-start'>
-            <a href="https://www.linkedin.com/in/abhishek-nadgire/" target='_blank' className='w-1/4 sm:w-auto flex justify-center cursor-pointer z-10'>
+        <div className='pt-10 space-y-5 md:space-y-8'>
+          <span className='block font-bold'>Follow me on</span>
+          <div className='flex md:flex-col w-fit gap-2'>
+            <a href="https://www.linkedin.com/in/abhishek-nadgire/" target='_blank' className=''>
               <div className='bg-black w-10 h-10 flex items-center rounded-full'>
                 <FaLinkedin className='mx-auto text-2xl' />
               </div>
             </a>
-            <a href="https://github.com/nadgire" target='_blank' className='w-1/4 sm:w-auto flex justify-center z-10'>
+            <a href="https://github.com/nadgire" target='_blank' className=''>
               <div className='bg-black w-10 h-10 flex items-center rounded-full'>
                 <FaGithub className='mx-auto text-2xl' />
               </div>
             </a>
-            <a href="https://x.com/abhinadgire" target='_blank' className='w-1/4 sm:w-auto flex justify-center z-10'>
+            <a href="https://x.com/abhinadgire" target='_blank' className=''>
               <div className='bg-black w-10 h-10 flex items-center rounded-full'>
                 <FaTwitter className='mx-auto text-2xl' />
               </div>
             </a>
-            <a href="https://www.instagram.com/nadgire_" target='_blank' className='w-1/4 sm:w-auto flex justify-center z-10'>
+            <a href="https://www.instagram.com/nadgire_" target='_blank' className=''>
               <div className='bg-black w-10 h-10 flex items-center rounded-full'>
                 <FaInstagram className='mx-auto text-2xl' />
               </div>
