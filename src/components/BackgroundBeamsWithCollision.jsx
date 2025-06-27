@@ -46,8 +46,6 @@ export const BackgroundBeamsWithCollision = ({
             repeatDelay: 3,
             delay: 4,
         },
-
-
         {
             initialX: 800,
             translateX: 800,
@@ -78,13 +76,87 @@ export const BackgroundBeamsWithCollision = ({
             delay: 1,
             className: "h-10",
         },
-
         {
             initialX: 1600,
             translateX: 1600,
             duration: 5,
             repeatDelay: 1,
             delay: 4,
+        },
+        {
+            initialX: 150,
+            translateX: 150,
+            duration: 6,
+            repeatDelay: 5,
+            delay: 3,
+        },
+        {
+            initialX: 450,
+            translateX: 450,
+            duration: 8,
+            repeatDelay: 2,
+            delay: 1,
+            className: "h-6",
+        },
+        {
+            initialX: 750,
+            translateX: 750,
+            duration: 4,
+            repeatDelay: 6,
+            delay: 2,
+        },
+        {
+            initialX: 900,
+            translateX: 900,
+            duration: 7,
+            repeatDelay: 3,
+            delay: 4,
+        },
+        {
+            initialX: 300,
+            translateX: 300,
+            duration: 5,
+            repeatDelay: 1,
+            delay: 3,
+        },
+        {
+            initialX: 1050,
+            translateX: 1050,
+            duration: 3,
+            repeatDelay: 4,
+            delay: 2,
+            className: "h-15",
+        },
+        {
+            initialX: 1800,
+            translateX: 1800,
+            duration: 9,
+            repeatDelay: 2,
+            delay: 1,
+            className: "h-12",
+        },
+        {
+            initialX: 600,
+            translateX: 600,
+            duration: 6,
+            repeatDelay: 5,
+            delay: 4,
+            className: "h-6",
+        },
+        {
+            initialX: 1350,
+            translateX: 1350,
+            duration: 4,
+            repeatDelay: 3,
+            delay: 2,
+            className: "h-10",
+        },
+        {
+            initialX: 1650,
+            translateX: 1650,
+            duration: 8,
+            repeatDelay: 1,
+            delay: 3,
         },
     ];
 
@@ -197,7 +269,7 @@ const CollisionMechanism = React.forwardRef(({ parentRef, containerRef, beamOpti
                 repeatDelay: beamOptions.repeatDelay || 0,
             }}
             className={cn(
-                "absolute left-0 top-20 m-auto h-14 w-px rounded-full bg-gradient-to-t from-indigo-500 via-purple-500 to-transparent",
+                "absolute left-0 top-20 m-auto h-14 w-px rounded-full bg-gradient-to-t from-white via-white to-transparent",
                 beamOptions.className
             )} />
         <AnimatePresence>
@@ -246,7 +318,7 @@ const Explosion = ({
                         opacity: 0,
                     }}
                     transition={{ duration: Math.random() * 1.5 + 0.5, ease: "easeOut" }}
-                    className="absolute h-1 w-1 rounded-full bg-gradient-to-b from-indigo-500 to-purple-500" />
+                    className="absolute h-1 w-1 rounded-full bg-gradient-to-b from-white to-white" />
             ))}
         </div>)
     );
