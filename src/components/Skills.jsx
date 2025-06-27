@@ -23,9 +23,10 @@ import mongodb from '../assets/images/mongodb.svg';
 import jira from '../assets/images/jira-3.svg';
 import snow from '../assets/images/snow.svg';
 import itil from '../assets/images/ITIL.png'
+import postman from '../assets/images/postman.png';
 
 const SkillItem = ({ skillName, skillImage }) => (
-  <div className="flex flex-col items-center justify-center w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6 gap-3 bg-[#02081f] text-white p-5 rounded-3xl hover:bg-[#02082f] hover:vibrate hover:shadow-sky-950 shadow-lg tracking-widest">
+  <div className="p-5 rounded-3xl h-40 flex flex-col w-2/3 sm:w-1/3 md:w-1/4 lg:w-1/6 items-center justify-center  bg-[#02081f] text-white hover:bg-[#02082f] hover:vibrate hover:shadow-sky-950 shadow-lg tracking-widest">
     <img src={skillImage} alt={skillName} className='w-16 h-16 object-contain' />
     <span className='whitespace-nowrap'>{skillName}</span>
   </div>
@@ -51,9 +52,11 @@ const Skills = () => {
     { skillName: 'Next.js', skillImage: nextJS },
     { skillName: 'JQuery', skillImage: jquery },
     { skillName: 'MongoDB', skillImage: mongodb },
+    { skillName: 'Postman', skillImage: postman },
+    // { skillName: 'ITIL Foundation', skillImage: itil },
     { skillName: 'Jira', skillImage: jira },
     { skillName: 'Service Now', skillImage: snow },
-    // { skillName: 'ITIL Foundation', skillImage: itil },
+    { skillName: 'ITIL Foundation', skillImage: itil },
   ];
 
   return (
@@ -64,10 +67,12 @@ const Skills = () => {
           Skills & <span className='text-orange-400 text-shadow-sm'>Abilities</span>
         </span>
       </div>
-      <div className='bg-[rgba(255,255,255,0.2)] w-[100%] lg:max-w-[80%] mx-auto mt-16 py-16 md:p-16 flex flex-wrap justify-center gap-3 md:justify-between'>
-        {skillsArr.map((skill) => (
-          <SkillItem key={skill.skillName} skillName={skill.skillName} skillImage={skill.skillImage} />
-        ))}
+      <div className='bg-[rgba(255,255,255,0.2)] w-[100%] lg:max-w-[80%] mx-auto mt-16 py-16 md:p-16'>
+        <div className='flex flex-wrap gap-10 text-center items-center justify-center'>
+          {skillsArr.map((skill) => (
+            <SkillItem key={skill.skillName} skillName={skill.skillName} skillImage={skill.skillImage} />
+          ))}
+        </div>
       </div>
     </section>
   );
