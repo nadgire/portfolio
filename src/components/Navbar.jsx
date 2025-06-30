@@ -11,7 +11,7 @@ import { RxHamburgerMenu } from 'react-icons/rx';
 import { useLocation } from 'react-router-dom';
 
 const navMenuArr = [
-  { title: 'Home', href: '#home', menuIcon: IoHome },
+  { title: 'Home', href: '/#home', menuIcon: IoHome },
   { title: 'About Me', href: '/#about-me', menuIcon: BsPersonHeart },
   { title: 'Skills', href: '/#skills', menuIcon: GiSkills },
   { title: 'Projects', href: '/#projects', menuIcon: LiaLaptopCodeSolid },
