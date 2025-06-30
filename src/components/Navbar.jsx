@@ -56,7 +56,6 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
-    console.log('Location changed:', location);
     if (location.pathname === '/') {
       if (location.hash) {
         const element = document.querySelector(location.hash);
