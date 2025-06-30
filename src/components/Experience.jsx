@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaBriefcase } from "react-icons/fa";
 import Timeline from "./Timeline";
 import { Link } from "react-router-dom";
 
 const Experience = () => {
-    const experiences = [
+    const [experiences, setExperiences] = useState([
+        {
+            title: "Aavidsoft, Pune",
+            content: "Frontend Developer - Intern",
+            period: "Mar 2025 - Present",
+        },
         {
             title: "Billennium India Pvt. Ltd.",
             content: "PEGA Application Specialist",
@@ -23,9 +28,16 @@ const Experience = () => {
         {
             title: "G. H. Raisoni College of Engineering and Management",
             content: "Lab Assistant",
-            period: "Aug 2015- May 2016",
+            period: "Aug 2015 - May 2016",
         },
-    ];
+    ]);
+
+    // Handler to update the period for a specific experience
+    const updatePeriod = (index, newPeriod) => {
+        const updatedExperiences = [...experiences];
+        updatedExperiences[index].period = newPeriod;
+        setExperiences(updatedExperiences);
+    };
 
     return (
         <section id="experience" className="py-16 bg-[#30011E] relative px-6 lg:px-10">
@@ -36,8 +48,8 @@ const Experience = () => {
                 </span>
             </div>
 
-            {/* Timeline for displaying experiences */}
-            <Timeline data={experiences} />
+            {/* Pass experiences and update handler to Timeline */}
+            <Timeline data={experiences} updatePeriod={updatePeriod} />
 
             {/* Button to view more details */}
             <Link to="/detailed-experience" className="text-center mt-8 block">
