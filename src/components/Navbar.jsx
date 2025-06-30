@@ -8,20 +8,22 @@ import { MdWork, MdEmail } from 'react-icons/md';
 import { FaGraduationCap } from 'react-icons/fa6';
 import { FaTimes } from 'react-icons/fa';
 import { RxHamburgerMenu } from 'react-icons/rx';
+import { useLocation } from 'react-router-dom';
 
 const navMenuArr = [
   { title: 'Home', href: '#home', menuIcon: IoHome },
-  { title: 'About Me', href: '#about-me', menuIcon: BsPersonHeart },
-  { title: 'Skills', href: '#skills', menuIcon: GiSkills },
-  { title: 'Projects', href: '#projects', menuIcon: LiaLaptopCodeSolid },
-  { title: 'Experience', href: '#experience', menuIcon: MdWork },
-  { title: 'Education', href: '#education', menuIcon: FaGraduationCap },
-  { title: 'Contact', href: '#contact', menuIcon: MdEmail },
+  { title: 'About Me', href: '/#about-me', menuIcon: BsPersonHeart },
+  { title: 'Skills', href: '/#skills', menuIcon: GiSkills },
+  { title: 'Projects', href: '/#projects', menuIcon: LiaLaptopCodeSolid },
+  { title: 'Experience', href: '/#experience', menuIcon: MdWork },
+  { title: 'Education', href: '/#education', menuIcon: FaGraduationCap },
+  { title: 'Contact', href: '/#contact', menuIcon: MdEmail },
 ];
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home'); // Default active section is 'home'
+  const location = useLocation();
 
   const handleMenuToggle = () => {
     setIsMenuOpen((prevState) => !prevState);
@@ -53,6 +55,18 @@ const Navbar = () => {
     };
   }, []);
 
+  useEffect(() => {
+    console.log('Location changed:', location);
+    if (location.pathname === '/') {
+      if (location.hash) {
+        const element = document.querySelector(location.hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    }
+  }, [location]);
+
   return (
     <section className="shadow-sm w-full fixed bg-white whitespace-nowrap z-50">
       <div className="flex justify-between items-center mx-auto w-full lg:max-w-[80%] h-16 lg:pr-0">
@@ -82,9 +96,8 @@ const Navbar = () => {
             {navMenuArr.map(({ title, href, menuIcon: MenuIcon }) => (
               <li
                 key={title}
-                className={`hover:scale-125 transition-all duration-500 hover:text-blue-400 lg:hover:text-blue-900 ${
-                  activeSection === href.slice(1) ? 'text-orange-400 font-semibold' : ''
-                }`}
+                className={`font-semibold hover:scale-110 hover:text-blue-800 transition-all duration-500 ${activeSection === href.slice(1) ? 'text-blue-800 font-semibold' : ''
+                  }`}
               >
                 <a href={href} className="flex gap-2">
                   <MenuIcon className="text-lg" />
