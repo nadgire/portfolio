@@ -1,12 +1,9 @@
-import React, { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import profile from '../assets/images/profile-min.png'
 import wave from '../assets/images/Waving_Hand_Sign_Emoji_Icon_ios10_medium.avif'
 import { FaArrowAltCircleDown } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaTelegramPlane } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdDrafts } from "react-icons/md";
@@ -99,7 +96,7 @@ const Home = () => {
                                 <FaWhatsapp className='mx-auto text-[#01d8ff] text-2xl' />
                             </div>
                         </a>
-                        
+
                     </div>
                 </div>
 
