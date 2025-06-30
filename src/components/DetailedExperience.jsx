@@ -5,6 +5,19 @@ const DetailedExperience = () => {
 
     const expArray = [
         {
+            company: "Aavidsoft, Pune",
+            designation: "Frontend Developer - Intern",
+            duration: "Mar 2025 – Present",
+            responsibilities: [
+                "Led development of an inventory and rental platform for Rugn Seva Kendra, enabling affordable medical equipment rentals with deposit and negotiation features.",
+                "Built a scalable admin hierarchy and management modules for inventory, roles, equipment, and customer interactions across distributed centers.",
+                "Developed reporting tools for payment, product, and order analytics in XLSX, enhancing transparency and decision-making.",
+                "Used React.js, TypeScript, ES6+, Framer Motion, shadcn-ui, and Tailwind CSS for a responsive UI, with Redux Toolkit, Formik, and React Hook Form for state and form management.",
+                "Integrated date-fns, axios, and libraries (classnames, clsx, use-debounce) for optimized performance and seamless RESTful API data sync.",
+                "Conducted client meetings to gather, negotiate, and present requirements and product demos, ensuring alignment and satisfaction."
+            ]
+        },
+        {
             company: "Billennium India Pvt. Ltd.",
             designation: "PEGA Application Specialist",
             duration: "May 2024 – Aug 2024",
