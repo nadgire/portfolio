@@ -26,7 +26,7 @@ const navMenuArr = [
 ];
 const Footer = () => {
   return (
-    <div className='bg-black w-full h-auto text-white'>
+    <div className='bg-black w-full h-auto text-gray-400'>
       <div className='flex flex-col md:flex-row w-[80%] mx-auto justify-between py-10 md:pt-0 md:pb-10'>
         <div className='md:pt-10 space-y-5 md:space-y-10'>
           <span className='block font-bold'>Site Links</span>
