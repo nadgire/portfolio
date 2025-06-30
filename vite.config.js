@@ -10,4 +10,6 @@ export default defineConfig({
     host: '0.0.0.0',  // Expose the dev server to the network
   },
 
+  base: '/', // Set the base path for the application
+
 })
