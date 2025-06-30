@@ -39,7 +39,7 @@ const Home = () => {
         <section id="home" className='h-auto lg:h-screen bg-[#EDF2F4] pt-16 text-shadow-sm whitespace-nowrap relative'>
             <BackgroundBeamsWithCollision className={"absolute bg-transparent z-10"} />
             <div className='w-[80%] flex items-center h-full mx-auto flex-col lg:flex-row'>
-                <div className='lg:w-4/7 items-center flex justify-center mt-5 lg:mt-0'>
+                <div className='lg:w-4/7 items-center flex justify-center mt-5 lg:mt-0 z-50'>
                     <img ref={tiltRef} src={profile} alt="" className='h-[250px] w-[210px] md:h-[300px] md:w-[260px] lg:h-[450px] lg:w-[380px]' data-tilt />
                 </div>
                 <div className='lg:w-3/7 text-xl md:text-2xl lg:text-3xl text-[#071287] space-y-5 md:space-y-5 lg:space-y-5'>
@@ -73,28 +73,28 @@ const Home = () => {
                         </a>
 
                     </div>
-                    <div className='flex flex-wrap lg:flex-nowrap lg:space-x-3 lg:flex-row justify-start space-y-5 gap-5'>
-                        <a href="https://www.linkedin.com/in/abhishek-nadgire/" target='_blank' className='w-1/4 sm:w-auto flex justify-center cursor-pointer z-10'>
+                    <div className='flex flex-wrap items-center gap-4 my-10 md:gap-6 lg:gap-8'>
+                        <a href="https://www.linkedin.com/in/abhishek-nadgire/" target='_blank' className='sm:w-auto flex justify-center cursor-pointer z-10'>
                             <div className='bg-black w-10 h-10 flex items-center rounded-full'>
                                 <FaLinkedin className='mx-auto text-[#01d8ff] text-2xl' />
                             </div>
                         </a>
-                        <a href="https://github.com/nadgire" target='_blank' className='w-1/4 sm:w-auto flex justify-center z-10'>
+                        <a href="https://github.com/nadgire" target='_blank' className='sm:w-auto flex justify-center z-10'>
                             <div className='bg-black w-10 h-10 flex items-center rounded-full'>
                                 <FaGithub className='mx-auto text-[#01d8ff] text-2xl' />
                             </div>
                         </a>
-                        <a href="https://leetcode.com/u/nadgire/" target='_blank' className='w-1/4 sm:w-auto flex justify-center z-10'>
+                        <a href="https://leetcode.com/u/nadgire/" target='_blank' className='sm:w-auto flex justify-center z-10'>
                             <div className='bg-black w-10 h-10 flex items-center rounded-full'>
                                 <SiLeetcode className='mx-auto text-[#01d8ff] text-2xl' />
                             </div>
                         </a>
-                        <a href="mailto:abhinadgire@gmail.com" target='_blank' className='w-1/4 sm:w-auto flex justify-center z-10'>
+                        <a href="mailto:abhinadgire@gmail.com" target='_blank' className='sm:w-auto flex justify-center z-10'>
                             <div className='bg-black w-10 h-10 flex items-center rounded-full'>
                                 <MdDrafts className='mx-auto text-[#01d8ff] text-2xl' />
                             </div>
                         </a>
-                        <a href="https://wa.me/+919579318107" target='_blank' className='w-1/4 sm:w-auto flex justify-center z-10'>
+                        <a href="https://wa.me/+919371511135" target='_blank' className='sm:w-auto flex justify-center z-10'>
                             <div className='bg-black w-10 h-10 flex items-center rounded-full'>
                                 <FaWhatsapp className='mx-auto text-[#01d8ff] text-2xl' />
                             </div>
