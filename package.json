@@ -13,6 +13,7 @@
     "@aeternity/aepp-sdk": "^14.0.0",
     "@tabler/icons-react": "^3.31.0",
     "@tailwindcss/vite": "^4.0.12",
+    "canvasparticles-js": "^3.7.0",
     "clsx": "^2.1.1",
     "emailjs-com": "^3.2.0",
     "formik": "^2.4.6",
