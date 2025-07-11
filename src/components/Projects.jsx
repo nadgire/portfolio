@@ -36,7 +36,7 @@ const Projects = () => {
       ProjImage: wordScramble,
       ProjTitle: 'Word Scramble Game',
       ProjDescription: 'A word scramble game challenges players to unscramble mixed-up letters to form a valid word, testing vocabulary and problem-solving skills.',
-      LiveLink: 'https://nadgire.github.io/Mini-Projects/Word%20Scramble%20Game/scramble.html'
+      LiveLink: 'https://nadgire.github.io/Mini-Projects/WordScrambleGame/scramble.html'
     },
     {
       HoverTitle: 'Technologies Used',
@@ -44,7 +44,7 @@ const Projects = () => {
       ProjImage: tictactoe,
       ProjTitle: 'Tic Tac Toe',
       ProjDescription: 'Tic Tac Toe is a two-player game where players take turns marking spaces on a 3x3 grid, aiming to get three of their marks in a row horizontally, vertically, or diagonally.',
-      LiveLink: 'https://nadgire.github.io/Mini-Projects/Tic%20Tac%20Toe/public/'
+      LiveLink: 'https://nadgire.github.io/Mini-Projects/TicTacToe/public/'
     },
     {
       HoverTitle: 'Technologies Used',
@@ -60,7 +60,7 @@ const Projects = () => {
       ProjImage: rps,
       ProjTitle: 'Rock Paper Scissors',
       ProjDescription: 'Rock, Paper, Scissors is a two-player game where each player simultaneously chooses one of three options (rock, paper, or scissors), with rock beating scissors, scissors beating paper, and paper beating rock.',
-      LiveLink: 'https://nadgire.github.io/Mini-Projects/Rock%20Paper%20Scissors/'
+      LiveLink: 'https://nadgire.github.io/Mini-Projects/RockPaperScissors/'
     },
     {
       HoverTitle: 'Technologies Used',
