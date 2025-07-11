@@ -6,9 +6,14 @@ import { Link } from "react-router-dom";
 const Experience = () => {
     const [experiences, setExperiences] = useState([
         {
+            title: "Zizbey, Pune",
+            content: "Fullstack Web Developer",
+            period: "Jul 2025 - Present",
+        },
+        {
             title: "Aavidsoft, Pune",
             content: "Frontend Developer - Intern",
-            period: "Mar 2025 - Present",
+            period: "Mar 2025 - Jun 2025",
         },
         {
             title: "Billennium India Pvt. Ltd.",

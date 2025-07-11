@@ -82,16 +82,16 @@ const DetailedExperience = () => {
     }, []);
 
     return (
-        <section id="experience" className="pt-32 pb-16 relative px-6 lg:px-10 md:w-[80%] mx-auto">
+        <section id="experience" className="pt-32 pb-16 relative px-6 lg:px-10 md:w-[90%] mx-auto">
             <div className="flex items-center justify-center gap-3 text-shadow-sm">
                 <FaBriefcase className="text-6xl" />
                 <span className="text-center text-4xl font-bold">
                     Professional <span className="text-shadow-sm text-blue-900">Experience</span>
                 </span>
             </div>
-            <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16">
                 {expArray.map((item, index) => (
-                    <div key={index} className="w-full bg-white p-6 rounded-lg shadow-lg shadow-blue-100">
+                    <div key={index} className="w-full bg-white p-6 rounded-lg border shadow-lg shadow-gray-100 hover:shadow-2xl hover:shadow-gray-600 transition-all duration-300">
                         <h3 className="text-2xl font-semibold text-orange-400">{item.company}</h3>
                         <p className="text-xl text-blue-800">{item.employer}</p>
                         <p className="text-md text-blue-500">{item.designation}</p>
