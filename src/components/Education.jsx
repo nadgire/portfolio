@@ -13,9 +13,10 @@ const Education = () => {
             title: "Full Stack Web Development",
             college: "Bitcode Technologies",
             duration: "2024-2025",
-            status: "Pursuing",
+            status: "Completed",
             image: bitcode,
             percentage: "",
+            class: ""
         },
         {
             id: 1,
@@ -24,7 +25,8 @@ const Education = () => {
             duration: "2013-2017",
             status: "Completed",
             image: ghrcem,
-            percentage: "64% | First Class",
+            percentage: "64%",
+            class: "First Class"
         },
         {
             id: 2,
@@ -33,7 +35,8 @@ const Education = () => {
             duration: "2008-2013",
             status: "Completed",
             image: essp,
-            percentage: "53% | Second Class",
+            percentage: "53%",
+            class: "Second Class"
         },
         {
             id: 3,
@@ -42,7 +45,8 @@ const Education = () => {
             duration: "2007-2008",
             status: "Completed",
             image: ssmv,
-            percentage: "79.07% | First Class",
+            percentage: "79.07%",
+            class: "First Class"
         }
     ];
 
@@ -85,9 +89,9 @@ const Education = () => {
                             <h2 className="text-xl font-bold text-blue-900">{x.title}</h2>
                             <p className="text-gray-600">{x.college}</p>
                             <p className="text-green-600 font-semibold mt-1">
-                                {x.duration} | {x.status}
+                                {x.duration}
                             </p>
-                            <p className="text-orange-400 font-semibold mt-1">{x.percentage}</p>
+                            <p className="text-orange-400 font-semibold mt-1">{x.percentage} {x.percentage && x.class && "|"} {x.class}</p>
                         </div>
                     </motion.article>
                 ))}

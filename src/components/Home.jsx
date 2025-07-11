@@ -10,9 +10,11 @@ import { MdDrafts } from "react-icons/md";
 import SkillAnimation from './SkillAnimation';
 import VanillaTilt from 'vanilla-tilt';
 import { BackgroundBeamsWithCollision } from './BackgroundBeamsWithCollision';
+// import CanvasParticles from './'
 
 const Home = () => {
     const tiltRef = useRef(null);
+    // const showcaseDefault = new CanvasParticles('#showcase-default').start()
 
     useEffect(() => {
         if (tiltRef.current) {
@@ -34,7 +36,7 @@ const Home = () => {
     return (
 
         <section id="home" className='h-auto lg:h-screen bg-[#EDF2F4] pt-16 text-shadow-sm whitespace-nowrap relative'>
-            <BackgroundBeamsWithCollision className={"absolute bg-transparent z-10"} />
+            <BackgroundBeamsWithCollision className={"absolute bg-transparent z-10"} />           
             <div className='w-[80%] flex items-center h-full mx-auto flex-col lg:flex-row'>
                 <div className='lg:w-4/7 items-center flex justify-center mt-5 lg:mt-0 z-10'>
                     <img ref={tiltRef} src={profile} alt="" className='h-[250px] w-[210px] md:h-[300px] md:w-[260px] lg:h-[450px] lg:w-[380px]' data-tilt />
