@@ -24,6 +24,8 @@ import jira from '../assets/images/jira-3.svg';
 import snow from '../assets/images/snow.svg';
 import itil from '../assets/images/ITIL.png'
 import postman from '../assets/images/postman.png';
+import vue from '../assets/images/vue.png';
+import vuetify from '../assets/images/vuetify.svg';
 
 const SkillItem = ({ skillName, skillImage }) => (
   <div className="p-5 rounded-3xl h-40 flex flex-col w-2/3 sm:w-1/3 md:w-1/4 lg:w-1/6 items-center justify-center  bg-[#02081f] text-white hover:bg-[#02082f] hover:vibrate hover:shadow-sky-950 shadow-lg tracking-widest">
@@ -37,6 +39,7 @@ const Skills = () => {
     { skillName: 'NodeJS', skillImage: nodeJS },
     { skillName: 'ExpressJS', skillImage: expressJS },
     { skillName: 'ReactJS', skillImage: reactJS },
+    { skillName: 'Vue', skillImage: vue },
     { skillName: 'ReduxJS', skillImage: reduxJS },
     { skillName: 'Netlify', skillImage: netlify },
     { skillName: 'JavaScript', skillImage: javascript },
@@ -47,6 +50,7 @@ const Skills = () => {
     { skillName: 'PostgreSQL', skillImage: postgresql },
     { skillName: 'Bootstrap', skillImage: bootstrap },
     { skillName: 'TailwindCSS', skillImage: tailwindCSS },
+    { skillName: 'Vuetify', skillImage: vuetify },
     { skillName: 'Git', skillImage: git },
     { skillName: 'AWS', skillImage: aws },
     { skillName: 'Next.js', skillImage: nextJS },
