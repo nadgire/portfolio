@@ -9,7 +9,7 @@ import todomanager from '../assets/images/todomanager.png';
 import { LiaLaptopCodeSolid } from 'react-icons/lia';
 import PinEffect from './PinEffect';
 import { FaChevronCircleRight } from "react-icons/fa";
-
+import currencyConverter from '../assets/images/currency.png';
 const Projects = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null); // State to manage hover index
 
@@ -61,6 +61,14 @@ const Projects = () => {
       ProjTitle: 'Rock Paper Scissors',
       ProjDescription: 'Rock, Paper, Scissors is a two-player game where each player simultaneously chooses one of three options (rock, paper, or scissors), with rock beating scissors, scissors beating paper, and paper beating rock.',
       LiveLink: 'https://nadgire.github.io/Mini-Projects/RockPaperScissors/'
+    },
+    {
+      HoverTitle: 'Technologies Used',
+      HoverDescription: 'ReactJS, TailwindCSS, Axios, Vite, ESLint',
+      ProjImage: currencyConverter,
+      ProjTitle: 'Currency Converter',
+      ProjDescription: 'A web application for converting currencies in real-time, built with modern tools for a fast, responsive, and user-friendly experience. Try it out!',
+      LiveLink: 'https://switchcurrency.netlify.app/'
     },
     {
       HoverTitle: 'Technologies Used',
